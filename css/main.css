@@ -282,9 +282,11 @@ textarea {
 }
 
 /*///// SITE /////*/
+html,
 body{
-    background: #CED6D9;
-
+    position: relative;
+    height: auto;
+    background-image: linear-gradient(to bottom, #7694B4, #DCE9ED);
 }
 #container{
     width: auto;
@@ -295,9 +297,10 @@ body{
     background: #FFF;
 }
 header{
+    position: relative;
     width: 100%;
-    height: auto;
-    background: #EAD6BF;
+    height: 150px;
+    margin: 0 0 35px 0;
     text-align: center;
 }
 header h1{
@@ -305,7 +308,18 @@ header h1{
     line-height: 3.5em;
 }
 nav{
+    position: relative;
     width: 100%;
     height: 100%;
     margin: 25px auto;
+}
+.valor{
+    font-size: 1.2em;
+    font-weight: normal;
+    float: right;
+    padding: 25px 0;
+    color: #23719E;
+}
+.valor .moeda{
+    color: #F60;
 }
