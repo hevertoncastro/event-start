@@ -221,7 +221,15 @@ $eventName = "Nome do Evento";
               <div class="ui success message">
                 <div class="header">We noticed some issues</div>
               </div>
-              <div class="ui submit button">Inscrever</div>
+              <!-- <div class="ui submit button">Inscrever</div> -->
+            </form>
+            <form method="POST" action="include/checkout.php">
+                <script type="text/javascript"
+                    src="https://pagar.me/assets/checkout/checkout.js"
+                    data-button-text="Pagar"
+                    data-encryption-key="ek_test_izjlfUVLpUCcFvv7HR1HbF8aLIdujp"
+                    data-amount="35000" data-max-installments="3" data-customer-data="false" data-ui-color="#7A98B6" data-button-class="ui submit button">
+                </script>
             </form>
             </section>
             <footer></footer>

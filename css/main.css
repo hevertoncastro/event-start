@@ -115,9 +115,8 @@ nav {
   float: right;
   padding: 25px 0;
   color: #7694B4; }
-
-.valor .moeda {
-  color: #FF7920; }
+  .valor .moeda {
+    color: #FF7920; }
 
 /* ==========================================================================
    Helper classes
