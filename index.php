@@ -223,14 +223,15 @@ $eventName = "Nome do Evento";
               </div>
               <!-- <div class="ui submit button">Inscrever</div> -->
             </form>
-            <form method="POST" action="include/checkout.php">
-                <script type="text/javascript"
-                    src="https://pagar.me/assets/checkout/checkout.js"
-                    data-button-text="Pagar"
-                    data-encryption-key="ek_test_izjlfUVLpUCcFvv7HR1HbF8aLIdujp"
-                    data-amount="35000" data-max-installments="3" data-customer-data="false" data-ui-color="#7A98B6" data-button-class="ui submit button">
-                </script>
+            <!-- INICIO FORMULARIO BOTAO PAGSEGURO -->
+            <form action="https://pagseguro.uol.com.br/checkout/v2/payment.html" method="post" onsubmit="PagSeguroLightbox(this); return false;">
+            <!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
+            <input type="hidden" name="code" value="3FE9C614DADA4EBAA4FE2F9B079BBC6D" />
+            <input type="image" src="https://p.simg.uol.com.br/out/pagseguro/i/botoes/pagamentos/209x48-pagar-azul-assina.gif" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
             </form>
+            <script type="text/javascript" src="https://stc.pagseguro.uol.com.br/pagseguro/api/v2/checkout/pagseguro.lightbox.js"></script>
+
+            
             </section>
             <footer></footer>
         </div>
