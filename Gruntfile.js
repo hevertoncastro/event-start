@@ -47,8 +47,8 @@ module.exports = function (grunt) {
           '*.html',
           '*.php'
     		],
-    		//tasks: ['sass', 'uglify']
-        tasks: [ 'sass' ]
+    		tasks: ['sass', 'uglify']
+        //tasks: [ 'sass' ]
     	}
     }, // watch
 

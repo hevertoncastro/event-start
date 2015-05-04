@@ -43,6 +43,7 @@ $eventName = "XVI Congresso Brasileiro de Quadril";
         <div class="main-container">
             <div class="main wrapper clearfix">
 
+            <!-- STEPS -->
             <div class="ui steps fluid">
               <a href="" class="active step">
                 <i class="file text outline icon"></i>
@@ -67,47 +68,48 @@ $eventName = "XVI Congresso Brasileiro de Quadril";
               </a>
             </div>
 
+            <!-- FORM -->
             <section class="content">
             <form class="ui form" id="form-data">
               <h4 class="ui dividing header">Dados Pessoais</h4>
               <div class="three fields">
                 <div class="required field">
-                  <label>CPF</label>
-                  <input name="cpf" placeholder="CPF" type="text">
+                  <label for="cpf">CPF</label>
+                  <input name="cpf" id="cpf" placeholder="CPF" type="text">
                 </div>
                 <div class="required field">
-                  <label>Nome</label>
+                  <label for="nome">Nome</label>
                   <div class="two fields">
                     <div class="field">
-                      <input name="nome" placeholder="Primeiro Nome" type="text">
+                      <input name="nome" id="nome" placeholder="Primeiro Nome" type="text">
                     </div>
                     <div class="field">
-                      <input name="sobrenome" placeholder="Sobrenome" type="text">
+                      <input name="sobrenome" id="sobrenome" placeholder="Sobrenome" type="text">
                     </div>
                   </div>
                 </div>
                 <div class="field">
-                  <label>Nome para crachá</label>
-                  <input name="nome" placeholder="Nome para Crachá" type="text">
+                  <label for="cracha">Nome para crachá</label>
+                  <input name="cracha" id="cracha" placeholder="Nome para Crachá" type="text">
                 </div>
               </div>
 
               <div class="three fields">
                 <div class="field">
-                  <label>CRM</label>
-                  <input name="crm" placeholder="CRM" type="text">
+                  <label for="crm">CRM</label>
+                  <input name="crm" id="crm" placeholder="CRM" type="text">
                 </div>
                 <div class="field">
-                  <label>Sexo</label>
-                  <select class="ui dropdown" name="sexo">
+                  <label for="sexo">Sexo</label>
+                  <select class="ui dropdown" name="sexo" id="sexo">
                     <option value="">Selecione</option>
                     <option value="1">Masculino</option>
                     <option value="0">Feminino</option>
                   </select>
                 </div>
                 <div class="field">
-                  <label>Estado Civil</label>
-                  <select class="ui dropdown" name="civil">
+                  <label for="civil">Estado Civil</label>
+                  <select class="ui dropdown" name="civil" id="civil">
                     <option value="">Selecione</option>
                     <option value="casado">Casado</option>
                     <option value="solteiro">Solteiro</option>
@@ -119,16 +121,16 @@ $eventName = "XVI Congresso Brasileiro de Quadril";
 
               <div class="three fields">
                 <div class="required field">
-                  <label>Nascimento</label>
-                  <input name="nascimento" placeholder="Nascimento" type="text">
+                  <label for="nascimento">Nascimento</label>
+                  <input name="nascimento" id="nascimento" placeholder="Nascimento" type="text">
                 </div>
                 <div class="field">
-                  <label>Especialidade</label>
-                  <input name="especialidade" placeholder="Especialidade" type="text">
+                  <label for="especialidade">Especialidade</label>
+                  <input name="especialidade" id="especialidade" placeholder="Especialidade" type="text">
                 </div>
                 <div class="field">
-                  <label>Instituição</label>
-                  <input name="instituicao" placeholder="Instituição" type="text">
+                  <label for="instituicao">Instituição</label>
+                  <input name="instituicao" id="instituicao" placeholder="Instituição" type="text">
                 </div>
               </div>
 
@@ -136,27 +138,27 @@ $eventName = "XVI Congresso Brasileiro de Quadril";
 
               <div class="three fields">
                 <div class="required field">
-                  <label>CEP</label>
-                  <input name="cep" placeholder="CEP" type="text">
+                  <label for="cep">CEP</label>
+                  <input name="cep" id="cep" placeholder="CEP" type="text">
                 </div>
                 <div class="required field">
-                  <label>Endereço</label>
-                  <input name="endereco" placeholder="Endereço" type="text">
+                  <label for="endereco">Endereço</label>
+                  <input name="endereco" id="endereco" placeholder="Endereço" type="text">
                 </div>
                 <div class="field">
-                  <label>Complemento</label>
-                  <input name="complemento" placeholder="Complemento" type="text">
+                  <label for="complemento">Complemento</label>
+                  <input name="complemento" id="complemento" placeholder="Complemento" type="text">
                 </div>
               </div>
 
               <div class="three fields">
                 <div class="field">
-                  <label>Bairro</label>
-                  <input name="bairro" placeholder="Bairro" type="text">
+                  <label for="bairro">Bairro</label>
+                  <input name="bairro" id="bairro" placeholder="Bairro" type="text">
                 </div>
                 <div class="required field">
-                  <label>Estado</label>
-                  <select class="ui dropdown" name="estado">
+                  <label for="estado">Estado</label>
+                  <select class="ui dropdown" name="estado" id="estado">
                     <option value="">Selecione</option>
                     <option value="casado">Casado</option>
                     <option value="solteiro">Solteiro</option>
@@ -165,44 +167,44 @@ $eventName = "XVI Congresso Brasileiro de Quadril";
                   </select>
                 </div>
                 <div class="required field">
-                  <label>Cidade</label>
-                  <select class="ui dropdown" name="cidade">
+                  <label for="cidade">Cidade</label>
+                  <select class="ui dropdown" name="cidade" id="cidade">
                     <option value="">Selecione</option>
                     <option value="casado">Casado</option>
                     <option value="solteiro">Solteiro</option>
                     <option value="divorciado">Divorciado</option>
                     <option value="viuvo">Viúvo</option>
-                  </select>              
+                  </select>
                 </div>
               </div>
 
               <h4 class="ui dividing header">Contato</h4>
               <div class="three fields">
                 <div class="field">
-                  <label>Telefone Residencial</label>
-                  <input name="tel-res" placeholder="Telefone Residencial" type="text">
+                  <label for="tel-res">Telefone Residencial</label>
+                  <input name="tel-res" id="tel-res" placeholder="Telefone Residencial" type="text">
                 </div>
                 <div class="field">
-                  <label>Telefone Comercial</label>
-                  <input name="tel-com" placeholder="Telefone Comercial" type="text">
+                  <label for="tel-com">Telefone Comercial</label>
+                  <input name="tel-com" id="tel-com" placeholder="Telefone Comercial" type="text">
                 </div>
                 <div class="required field">
-                  <label>Telefone Celular</label>
-                  <input name="tel-cel" placeholder="Telefone Celular" type="text">
+                  <label for="tel-cel">Telefone Celular</label>
+                  <input name="tel-cel" id="tel-cel" placeholder="Telefone Celular" type="text">
                 </div>
               </div>
               <div class="two fields">
                 <div class="required field">
-                  <label>Email</label>
+                  <label for="email">Email</label>
                   <div class="ui icon input">
-                    <input placeholder="email" type="email">
+                    <input name="email" id="email" placeholder="email" type="email">
                     <i class="mail icon"></i>
                   </div>
                 </div>
                 <div class="required field">
-                  <label>Senha</label>
+                  <label for="senha">Senha</label>
                   <div class="ui icon input">
-                    <input placeholder="senha" type="password">
+                    <input name="senha" id="senha" placeholder="senha" type="password">
                     <i class="lock icon"></i>
                   </div>
                 </div>
@@ -211,8 +213,8 @@ $eventName = "XVI Congresso Brasileiro de Quadril";
               <h4 class="ui dividing header">Inscrição</h4>
               <div class="two fields">
                 <div class="field">
-                  <label>Categoria</label>
-                  <select class="ui dropdown" name="categoria">
+                  <label for="categoria">Categoria</label>
+                  <select class="ui dropdown" name="categoria" id="categoria">
                     <option value="">Selecione</option>
                     <option value="associado">Associado</option>
                     <option value="medico">Médico</option>
@@ -220,10 +222,10 @@ $eventName = "XVI Congresso Brasileiro de Quadril";
                   </select>
                 </div>
                 <div class="field">
-                  <label>Valor</label>
+                  <label for="valor">Valor</label>
                   <div class="ui icon input">
-                    <input type="text" value="R$ 650" disabled>
-                    <i class="dollar  icon"></i>
+                    <input name="valor" id="valor" type="text" value="R$ 650" disabled>
+                    <i class="dollar icon"></i>
                   </div>
                 </div>
               </div>
@@ -251,7 +253,7 @@ $eventName = "XVI Congresso Brasileiro de Quadril";
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
         <script src="semantic/dist/semantic.min.js"></script>
-        <script src="js/main.js"></script>
+        <script src="js/main.min.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
@@ -261,100 +263,13 @@ $eventName = "XVI Congresso Brasileiro de Quadril";
             e=o.createElement(i);r=o.getElementsByTagName(i)[0];
             e.src='//www.google-analytics.com/analytics.js';
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+            ga('create','UA-XXXXX-X','auto');
+            ga('send','pageview');
             */
             var myJS = myJS || {};
             (function ($) {
 
-              myJS.init = function () {
-
-                $('.ui.checkbox')
-                  .checkbox()
-                ;
-                $('select.dropdown')
-                  .dropdown()
-                ;
-
-                //ENVIAR DADOS
-                $(".btn-send").click(function() {
-
-                //MOSTRA LOADER
-                $(".loader").show();
-                //OCULTA DIV DE DO AVISO
-                $(".res").hide();
-                //DESATIVA O BOTÃO SUBMIT
-                $(".btn-send").attr("disabled", true);
-                //SERIALIZA DADOS
-                var datastring = $("#form-data").serialize();
-
-                    //ENVIA DADOS
-                    $.ajax({
-                      url: "include/form-contact.php",
-                      type: "post",
-                      data: datastring,
-                      dataType: "HTML"
-
-                    }).done(function(data){
-
-                      //VERIFICAÇÃO DO TEXTO DE RETORNO DO PHP
-                      if(data == "nome"){
-                          returnError("nome", "Informe seu <strong>nome</strong>.");
-                      } else if(data == "llllllll"){
-                          returnError("llllllll", "Informe um <strong>llllllll</strong>.");
-                      } else if(data == "llllllll"){
-                          returnError("llllllll", "Informe um <strong>llllllll</strong>.");
-                      } else if(data == "llllllll"){
-                          returnError("llllllll", "Informe um <strong>llllllll</strong>.");
-                      } else if(data == "llllllll"){
-                          returnError("llllllll", "Informe um <strong>llllllll</strong>.");
-                      } else if(data == "llllllll"){
-                          returnError("llllllll", "Informe um <strong>llllllll</strong>.");
-                      } else if(data == "llllllll"){
-                          returnError("llllllll", "Informe um <strong>llllllll</strong>.");
-                      } else if(data == "llllllll"){
-                          returnError("llllllll", "Informe um <strong>llllllll</strong>.");
-                      } else if(data == "llllllll"){
-                          returnError("llllllll", "Informe um <strong>llllllll</strong>.");
-                      } else if(data == "llllllll"){
-                          returnError("llllllll", "Informe um <strong>llllllll</strong>.");
-                      } else if(data == "llllllll"){
-                          returnError("llllllll", "Informe um <strong>llllllll</strong>.");
-                      } else if(data == "llllllll"){
-                          returnError("llllllll", "Informe um <strong>llllllll</strong>.");
-                      } else if(data == "erro_sql"){
-                          msg = '<span class="glyphicon glyphicon-remove"></span>Erro ao enviar, tente novamente mais tarde.';
-                          myJS.ga.send('contact', 'click', 'erro - erro_sql');
-                      } else {
-                          //SUCESSO
-                          $(".res").css("color","#67AFD6");
-                          //ENVIADO
-                          msg = '<span class="glyphicon glyphicon-ok"></span>Mensagem enviada com sucesso!';
-                          //RESETA FORM
-                          //setTimeout(function(){
-                          $("#form-data")[0].reset();
-                          //}, 7000); //esconde após 7 segundos
-                      }
-                      var showMessage = function(){
-                          //ESCONDE LOADER
-                          $(".loader").hide();
-                          //MOSTRA MENSAGEM
-                          $(".res").html(data);
-                          $(".res").slideDown();
-                      }
-
-                      showMessage();
-
-                    }).fail(function(){
-                      //MOSTRA MENSAGEM DE ERRO
-                      msg = "Erro ao enviar, tente em alguns minutos.";
-                      showMessage();
-                    });
-                });
-
-              };
-
               myJS.init();
-
 
             }(jQuery));
         </script>

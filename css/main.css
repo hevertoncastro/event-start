@@ -162,10 +162,19 @@ label {
 
 .res {
   position: relative;
-  display: inline-block;
+  display: none;
   margin: 5px;
   color: #D36226;
   font-size: 1rem;
+}
+
+.loader {
+  display: none !important;
+}
+
+.border-warning {
+  border-color: #D36226 !important;
+  color: #D36226 !important;
 }
 
 /* ==========================================================================
